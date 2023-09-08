@@ -1,0 +1,32 @@
+1687401150060	Rename resource 'main.include.jsp'
+1687402901859	Rename resource 'includer.jsp'
+1687403736551	Copy file
+1687403739493	Copy file
+1687403746122	Rename resource 'a2.jsp'
+1687404496017	Move 3 resources to 'TEST'
+1687404535743	Move 'module' to 'forward'
+1687404545421	Rename resource 'forward'
+1687404552119	Move 'select.jsp' to 'jspforward'
+1687404554728	Move 'view.jsp' to 'jspforward'
+1687404611974	Move 2 resources to 'include'
+1687404619661	Move 2 resources to 'include'
+1687404705093	Delete element
+1687404721809	Move 2 resources to 'actionform'
+1687405031469	Move 3 resources to 'webapp'
+1687405643738	Copy file
+1687405676547	Copy file
+1687409840008	Copy file
+1687409843425	Copy file
+1687410614832	Move 'module' to 'jspforward'
+1687410618188	Move 2 resources to 'jspforward'
+1687410650824	Move 3 resources to 'join'
+1687411133403	Rename resource 'Forward_header.jsp'
+1687412442485	Move 'Forward_process.jsp' to 'module'
+1687412717978	Rename resource 'Forward_process.jsp'
+1687414146717	Copy file
+1687414152851	Copy file
+1687414167923	Copy file
+1687416540436	Copy file
+1687480819160	Delete element
+1687481371445	Rename type 'Person'
+1687481780628	Rename resource 'userBeanPerson.jsp'

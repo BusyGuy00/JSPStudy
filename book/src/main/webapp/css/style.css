@@ -1,0 +1,583 @@
+@charset "UTF-8";
+		/* 기본 리셋 */
+	*{margin: 0; padding: 0; box-sizing: border-box;}
+    a {text-decoration: none; color: inherit;}
+    li {list-style: none;}
+    address {font-style: normal;}
+    h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+    body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F2ECE9
+	}
+	#listPage {
+		width: 1400px;
+		margin: 0 auto;
+	}
+	#listLast {
+		display : flex;
+    	width: 300px;
+    	height: 30px;
+    	font-size: medium;
+    	margin : 0 auto;
+    	justify-content: space-evenly;
+    	align-items: flex-start;
+	}
+
+	
+	/* 카테고리 css */
+	.caBar{
+		float:left;
+		margin-top: 125px;
+	}
+	#BImg{
+		background-color: rgb(208,204,247);
+  		height: 100px;
+  		
+	}
+	#BImg img {
+		margin-top: -30px;
+		margin-left: 340px;
+	}
+	.caMenu{
+		width: 100px;
+	    height: 580px;
+	    overflow: hidden;
+	    line-heigth: 70px;
+	    margin-bottom: 0px;
+		
+	}
+	.caMenu > li {
+		width: 100%;
+		text-align: center;
+		background-color: #F2ECE9;
+		border-bottom: 1px solid #0442BF;
+	}
+	.caMenu a {
+		font-size: 600;
+		color: #0442BF;
+		line-height: 50px;
+	}
+	.caSubMenu > li {
+		line-height: 60px;
+		
+	}
+	.caSubMenu {
+		height: 0;
+		overflow: hidden;
+	}
+	.caMenu > li:hover {
+		  
+		  transition-duration: 0.5s;
+	}
+	.caMenu > li:hover .caSubMenu {
+		  height: 250px; /*서브메뉴 li한개의 높이 50*5*/
+		  transition-duration: 1s;
+	}
+	
+	/* 리스트 css */
+	.listBord{
+		display: flex;
+	  	justify-content: space-around;
+	  	flex-wrap: wrap;
+	  	margin-top : 140px;
+		margin-left: 100px;
+	}
+
+	.listSearch {
+		width: 600px;
+		display: flex;
+		justify-content: center;
+		margin-left: 460px;
+		margin-top: -188px;
+		margin-bottom: 15px;
+		width: 560px;
+	    height: 60px;
+	    padding-right: 14px;
+	    border-radius: 25px;
+	    background: #fff;
+	    border: 1px solid #5055b1;
+	    box-sizing: border-box;
+	}
+	.listSearch input {
+	    border: none;
+	    outline: none;
+	}
+	.listSearch select{
+		border-style: none;
+		height: 40px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	#searchWord{
+		width: 500px;
+		height: 55px;
+		font-size: medium;
+	}
+	#searchWordSubmit{
+		width: 50px;
+		background: url("../img/SS.png") no-repeat;
+		margin-right: 10px;
+		margin-top: 5px;
+  		width: 50px;
+ 		height: 50px;
+	}
+	.listBord img{
+		width: 300px;
+		height: 440px;
+	}
+	.listView {
+		width: 25%;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		margin-right: 20px;
+	}
+	.listView li {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	.listView li:nth-child(1) {
+		display: none;
+	}
+	.listView li:nth-child(2) {
+		padding-bottom: 20px;
+		color: #5055b1;
+		font-size: 18px;
+		font-weight: 900;
+	}
+	.listView li:nth-child(6) {
+		display: none;
+	}
+	.listView li:nth-child(7) {
+		border-bottom: 2px solid #5055b1;
+		width: 45%;
+    	margin: 0 auto;
+	}
+	
+	/* qa 리스트	*/
+	
+	#QalistPage {
+		width: 1400px;
+		margin: 0 auto;
+	}
+	.QalistSearch {
+		width: 600px;
+		display: flex;
+		justify-content: center;
+		margin-left: 460px;
+		margin-top: -98px;
+		margin-bottom: 15px;
+	    height: 60px;
+	    padding-right: 14px;
+	    border-radius: 25px;
+	    background: #fff;
+	    border: 1px solid #5055b1;
+	    box-sizing: border-box;
+	}
+	.QalistSearch input {
+	    border: none;
+	    outline: none;
+	}
+	.QalistSearch select{
+		border-style: none;
+		height: 40px;
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	#QasearchWord{
+		width: 500px;
+		height: 55px;
+		font-size: medium;
+	}
+	#QasearchWordSubmit{
+		width: 50px;
+		background: url("../img/SS.png") no-repeat;
+		margin-right: 10px;
+		margin-top: 5px;
+  		width: 50px;
+ 		height: 50px;
+	}
+	.QalistBord{
+		margin-top: 145px;
+	}
+	.QalistBord li{
+		line-height: 50px;
+	}
+	.QaView {
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	flex-wrap: wrap;
+    	margin-right: 235px;
+	}
+	.QaView ul {
+		width: 100%;
+	}
+	.QaView li{
+		float: left;
+		
+		font-size: large;
+		width: 20%;
+		text-align: center;
+		border-bottom: 1px solid #5055b1;
+	}
+	#QaBtn {
+		display: flex;
+		justify-content: space-around;
+    	align-items: flex-end;
+    	width: 500px;
+    	margin-left: 800px;
+    	margin-top: 20px;
+	}
+	.memberInsert{
+		display: flex;
+		width: 100%;
+		height: 100vh;
+		justify-content: center;
+   	 	align-items: center;
+   	 	margin: 0 auto;
+	}
+	.memberInsertTb{
+		width: 700px;
+		height: 500px;
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	font-weight: bolder;
+	}
+	.memberInsertSumit{
+		width: 700px;
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+    	font-weight: bolder;
+    	text-align: center;
+	}
+	.memberInsertTb tr{
+		height: 50px;
+	}
+	.memberInsertTb input{
+	    font-size: medium;
+	}
+	.insertInput{
+		background-color: #F2ECE9;
+		width: 300px;
+		line-height: 35px;
+		text-align: center;
+		border-bottom: 2px solid #0442BF;
+		border-left: none;
+	    border-right: none;
+	    border-top: none;
+	   	outline: none;
+	}
+	#addressBtn{
+		background-color: #F2ECE9;
+		width: 150px;
+		height: 30px;
+		margin-left: 80px;
+		border: none;
+		border: 1px solid #0442BF;
+		border-radius: 30px 10px 50px;
+		box-sizing: border-box;
+		color: #0442BF;
+		font-weight: bold;
+	}
+	#addressSubmit{
+		width: 500px;
+		height: 50px;
+		border: none;
+		background-color: #2C7BBF;
+		color: #F2ECE9;
+		font-weight: bold;
+		font-size: large;
+		border-radius: 30px 10px 50px;
+		margin-right: 10px;
+	}
+	.memberInsertBtn {
+		border: none;
+	    outline: none;
+	    background-color: #F2ECE9;
+	    border-bottom: 2px solid #0442BF;
+	    height: 20px;
+	    margin-bottom: 5px
+	}
+	
+	/* header.jsp*/
+	/* 로그인 */
+	#header {
+		background-color: #F2ECE9;
+		display: flex;
+		border-bottom: 3px solid #0442BF;
+		text-align: center;
+		align-items: center;
+		height: 115px;
+	}
+	#headerLogin button {
+	    border: none;
+	    outline: none;
+	    background-color: #F2ECE9;
+	}
+	#headerLogin input {
+	    border: none;
+	    outline: none;
+	    background-color: #F2ECE9;
+	}
+	
+	#header1 {
+		width: 20%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#header1 a {
+		width : 100px;
+		height: 100px;
+		background: url("../img/logo.png") no-repeat ;
+		background-size: cover;
+		margin-left: 260px;
+	}
+	
+	#header2 {
+		width: 60%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#memberlogin{
+		width: 20%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#loginView{
+		width: 30%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#nomemberView{
+		width: 30%;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#nomemberView td{
+		border: 1px solid #000;
+		border-collapse : collapse;
+		border-spacing: 0px;
+		width: auto;
+		height: auto;
+	}
+	#chat{
+		width: 120px
+	}
+	#chatWindow {
+		border: 1px solid black;
+		width: 120px;
+		height: 310px;
+		overflow:scroll;
+		padding: 5px;
+	}
+	#chatMessage {
+		margin-top:10px;
+		width: 120px;
+		height: 30px;
+	}
+	#sendBtn {
+		margin-top: 10px;
+		height: 30px;
+		position: relative;
+		top: 2px;
+		left: -2px;
+	}
+	#closeBtn {
+		margin-bottom: 3px;
+		height: 30px;
+		position: relative;
+		top : 2px;
+		left: -2px;
+	}
+	#chatId {
+		width: 120px;
+		height: 24px;
+		background-color: #eee;
+	    border: none;
+	    outline: none;
+
+	}
+	#chat{
+		width: 120px
+	}
+	#chatWindow {
+		border: 1px solid black;
+		width: 120px;
+		height: 310px;
+		overflow:scroll;
+		padding: 5px;
+	}
+	#chatMessage {
+		margin-top:10px;
+		width: 120px;
+		height: 30px;
+	}
+	#sendBtn {
+		margin-top: 10px;
+		height: 30px;
+		position: relative;
+		top: 2px;
+		left: -2px;
+	}
+	#closeBtn {
+		margin-bottom: 3px;
+		height: 30px;
+		position: relative;
+		top : 2px;
+		left: -2px;
+	}
+	#chatId {
+		width: 120px;
+		height: 24px;
+		background-color: #eee;
+	    border: none;
+	    outline: none;
+
+	}
+	.myMsg {
+		text-align: right;
+	}
+	
+	/* ------------------------------------ */
+	/* 뷰페이지 */
+	#book_table {
+		margin: auto;
+		padding: 10px;
+		width: 750px;
+		text-align: center;
+	}
+	#book_table tr td {
+		padding: 5px;
+	}
+	#book_table button {
+		background-color: royalblue;
+		color: #fff;
+		border: royalblue;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 20px 10px;
+	}
+	#book_cover {
+		width: 200px;
+	}
+	#view_review {
+		width: 750px;
+		margin: auto;
+		margin-top: 20px;
+		text-align: center;
+		padding: 20px;
+	}
+	#view_review tr td {
+		border-bottom: 1px solid #eee;
+		padding: 20px;
+	}
+	#comment_submit {
+		text-align: center;
+	}
+	#comment_submit button {
+		background-color: royalblue;
+		color: #fff;
+		border: royalblue;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 20px 10px;
+	}
+	
+	/* 리뷰쓰는 페이지 */
+	#review_write {
+		margin: auto;
+		padding: 10px;
+		width: 500px;
+		text-align: center;
+	}
+	#review_write tr td {
+		padding: 15px;
+		border-bottom: 1px solid #eee;
+		border-spacing: 1px;
+	}
+	#review_write input {
+		width: 100%;
+		height: 2em;
+		border: 1px solid #ddd;
+	}
+	#review_write button {
+		background-color: royalblue;
+		color: #fff;
+		border: royalblue;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 20px 10px;
+	}
+	/* 제목 */
+	h2 {
+		margin: auto;
+		font-size: 15px;
+		text-align: center;
+		width: 500px;
+		padding: 20px;
+		border-bottom: 1px solid cornflowerblue;
+	}
+	
+	/* class="write"로 지정된 테이블 */
+	.write {
+		margin: auto;
+		padding: 20px;
+		width: 750px;
+		text-align: center;
+	}
+	.write tr td {
+		padding: 10px;
+	}
+	.write input {
+		width: 100%;
+		height: 2em;
+		border: 1px solid #ddd;
+	}
+	.write textarea {
+		width: 100%;
+		height: 10em;
+		border: 1px solid #ddd;
+		resize: none;
+	}
+	.write button {
+		background-color: royalblue;
+		color: #fff;
+		border: royalblue;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 20px 10px;
+	}
+	
+	/* input 타입이 checkbox이거나 radio일 경우 */
+	.input_display {
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+	}
+	/* checkbox, radio 버튼 크기 */
+	.input_display input {
+		width: 50px;
+	}
+	
+	/* memberidpass.jsp 버튼 속성 */
+	#idpassbtn button {
+		background-color: royalblue;
+		color: #fff;
+		border: royalblue;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 20px 10px;
+	}

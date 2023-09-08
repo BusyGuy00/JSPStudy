@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;el_chap03A/src/main/webapp/0626/Expression language/el.03.jsp&apos; to &apos;el03.jsp&apos;" description="Rename resource &apos;el.03.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/0626/Expression language/el.03.jsp" name="el03.jsp" stamp="1687765250329" updateReferences="true"/>
+</session>
